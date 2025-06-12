@@ -67,7 +67,6 @@ export class CarsService {
             }
             return car
         })
-
         return carDB
     }
 
@@ -80,6 +79,10 @@ export class CarsService {
         )
 
         return this.cars = newCars
+    }
+
+    fillCarsWithSeedData( cars: Car[] ){
+        this.cars = cars
     }
 
     
